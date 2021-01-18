@@ -1,0 +1,34 @@
+In order to replicate this analysis, the user will need to follow these steps:
+
+	1. Ensure all packages within the section Gathering Data have been installed:
+		- json
+		- os
+		- glob
+		- pandas
+		- numpy
+		- zipfile
+		- bs4
+		- requests
+		- string
+		- sqlite3
+		- sqlalchemy
+		- sklearn
+		- matplotlib
+		- seaborn
+		- statsmodels
+		- collections
+
+	2.  Edit the file path below to the location where datafile2 has been saved on the users local machine.
+		- Location of cell: 3.1.1 Gathering Data From JSON Dataset; Changing Directory and Identifying File Paths
+		- Code to edit: os.chdir(r"	ENTER DESIRED FILE PATH HERE	/datafilev2/datafile/") 
+
+	3. The user will need to ensure that the below URL is still active in order for the cells to run within '3.1.2 Gathering Data from Wikipedia'.
+		- https://en.wikipedia.org/wiki/PFA_Players%27_Player_of_the_Year
+
+	4. If the user would like to save the relational database to a specific location locally, they should edit the below file path.
+		- Location of cell: 3.4  Databasing; Storing Cleaned Data in a Database
+		- Code to edit: engine = create_engine('sqlite:///	ENTER DESIRED FILE PATH HERE	/premier_league.db3', echo=False)
+
+
+*Please note that when zipped the dataset comes to less than 10MB, when unzipped the dataset exceeds 10MB. 
+If the requirement is that the unzipped dataset is less than 10MB, then please treat season14-15 as my sample dataset.
